@@ -1,0 +1,24 @@
+﻿<Window x:Class="PR1inWPF.T1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PR1inWPF"
+        mc:Ignorable="d"
+        Title="T1" Height="450" Width="800">
+    <Grid>
+        <RichTextBox HorizontalAlignment="Left" Height="399" Margin="10,10,0,0" VerticalAlignment="Top" Width="239" TextChanged="RichTextBox_TextChanged">
+            <FlowDocument>
+                <Paragraph>
+                    <Span FontSize="16" FontFamily="Times New Roman">
+                        <Run Text="Дано целое четырехзначное число. Найти сумму и произведение его цифр"/>
+                    </Span>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <TextBox x:Name="tb_Input" HorizontalAlignment="Left" Height="23" Margin="450,84,0,0" TextWrapping="Wrap" Text="1234" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_Output" HorizontalAlignment="Left" Height="86" Margin="431,173,0,0" TextWrapping="Wrap" Text="Здесь будет ответ" VerticalAlignment="Top" Width="160"/>
+        <Button x:Name="btn_Answer" Content="Получить ответ" HorizontalAlignment="Left" Margin="450,112,0,0" VerticalAlignment="Top" Width="120" Height="56" Click="btn_Answer_Click"/>
+
+    </Grid>
+</Window>
